@@ -11,12 +11,12 @@ A simple python script that combines multiple cbr cbz files into a single collec
  When it's done you'll be left with a single .cbz file named after the folder that you are currently in. It expects a file structure of:
 
 
- My Comic Collection
- --------Series 1
- -------------Issue 1
- -------------Issue 2
- -------------Issue 3
- --------Series 2
- -------------Issue 1
- -------------Issue 2
- -------------Issue 3
+ My Comic Collection  
+ --------Series 1  
+ -------------Issue 1  
+ -------------Issue 2  
+ -------------Issue 3  
+ --------Series 2  
+ -------------Issue 1  
+ -------------Issue 2  
+ -------------Issue 3  

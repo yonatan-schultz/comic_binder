@@ -31,7 +31,7 @@ import shutil
 
 #create a directory named after our currect directory 
 directory = os.getcwd().split('/')[-1]
-os.mkdir(directory)
+#os.mkdir(directory)
 
 #find all the files in the current directory
 f = []
@@ -45,8 +45,9 @@ comics = [comic for comic in filenames if os.path.splitext(comic)[1] in suffix]
 
 #fuckin' extract it all.
 for comic in comics:
-	Archive(comic).extractall(directory)
-
+	currentish = os.path.join(directory,str(comics.index(comic)))
+	os.makedirs(currentish)
+	Archive(comic).extractall(currentish)
 #delete the group jpg
 
 #for dirpath, dirnames, filenames in os.walk(directory):
